@@ -14,29 +14,28 @@ exports.createPages = async ({ graphql, actions }) => {
   const queryResults = await graphql(`
     query AllFlower {
       allSanityFlower {
-    nodes {
-      description {
-        _rawChildren
-      }
-      flowername
-      id
-      sciencename
-      slug {
-        current
-      }
-      soil
-      water
-      sun {
-        title
-      }
-      mainImage {
-        asset {
-          altText
-          gatsbyImageData(width: 500, placeholder: BLURRED, layout: FIXED)
+        nodes {
+          _rawDescription
+          flowername
+          id
+          sciencename
+          slug {
+            current
+          }
+          link
+          soil
+          water
+          sun {
+            title
+          }
+          mainImage {
+            asset {
+              altText
+              gatsbyImageData(width: 500, placeholder: BLURRED, layout: FIXED)
+            }
+          }
         }
       }
-    }
-  }
     }
   `)
 

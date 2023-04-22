@@ -1,21 +1,23 @@
+import { Link } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 import * as React from "react"
 import styled from "styled-components"
 
 const SimpleCard = styled.section`
   article {
     --img-scale: 1.001;
-    --title-color: black;
     --link-icon-translate: -20px;
     --link-icon-opacity: 0;
     position: relative;
     border-radius: 16px;
     box-shadow: none;
-    background: #fff;
+    background: var(--color-code-bg);
     transform-origin: center;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
     width: 80%;
     margin-bottom: 1rem;
+    
   }
 
   article a::after {
@@ -30,9 +32,9 @@ const SimpleCard = styled.section`
   article h2 {
     margin: 0 0 18px 0;
     font-family: "Bebas Neue", cursive;
-    font-size: 1.9rem;
+    font-size: 2.2rem;
     letter-spacing: 0.06em;
-    color: var(--title-color);
+    color: var(--color-primary);
     transition: color 0.3s ease-out;
   }
 
@@ -58,11 +60,11 @@ const SimpleCard = styled.section`
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #28666e;
+    color: var(--color-primary);
   }
 
   article a:focus {
-    outline: 1px dotted #076028;
+    outline: 1px dotted var(--color-primary);
   }
 
   article a .icon {
@@ -78,7 +80,7 @@ const SimpleCard = styled.section`
   /* using the has() relational pseudo selector to update our custom properties */
   article:has(:hover, :focus) {
     --img-scale: 1.1;
-    --title-color: #28666e;
+    --title-color: var(--color-primary);
     --link-icon-translate: 0;
     --link-icon-opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -88,22 +90,21 @@ const SimpleCard = styled.section`
   /* used styles from this codepen: https://codepen.io/utilitybend/pen/bGvjLba */
 `
 
-const Card = ({ title, alt, src, sun, soil, water }) => {
+const Card = ({ title, src, alt, slug }) => {
   return (
     <div>
       <SimpleCard className="articles">
         <article>
           <div className="article-wrapper">
             <figure>
-              <img src={src} alt={alt} />
+            {/* <img src={src} alt={alt} /> */}
+              <GatsbyImage image={src} alt={alt} />
             </figure>
             <div className="article-body">
               <h2>{title}</h2>
-              <p>🌞 {sun}</p>
-              <p> 🟫 {soil}</p>
-              <p> 💧 {water}</p>
-              <a href="/" className="read-more">
-                Read more <span className="sr-only"> about {title}</span>
+             
+              <Link to={`/${slug}`} className="read-more">
+                Read more about {title}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon"
@@ -116,7 +117,7 @@ const Card = ({ title, alt, src, sun, soil, water }) => {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </article>

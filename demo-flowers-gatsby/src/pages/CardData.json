@@ -1,40 +1,37 @@
 [
-{
+  {
     "id": 1,
     "title": "Lavender",
     "scientific": "Lamiaceae",
-   "description": "There is much more to lavender than what meets the eye. Besides its beautiful, vibrant purple color and floral scent that it’s well known for, it’s actually a part of the mint family, interestingly enough. It has a rich history that dates back around 2,500 years, where it was used as a holy herb. Now it is commonly used in essential oils and for its other natural medicinal properties like helping with sleep. Suppose you live in a cooler zone like four or even three. In that case, there are some varieties that make growing it easier. Still, lavender isn’t difficult to grow with the right amount of sun and well-drained soil.",
+    "description": "There is much more to lavender than what meets the eye. Besides its beautiful, vibrant purple color and floral scent that it’s well known for, it’s actually a part of the mint family, interestingly enough. It has a rich history that dates back around 2,500 years, where it was used as a holy herb. Now it is commonly used in essential oils and for its other natural medicinal properties like helping with sleep. Suppose you live in a cooler zone like four or even three. In that case, there are some varieties that make growing it easier. Still, lavender isn’t difficult to grow with the right amount of sun and well-drained soil.",
     "sun": "very little",
     "water": "water every other day",
     "soil": "low PH",
 
-        "src": "https://housegrail.com/wp-content/uploads/2022/03/Lavender_Pixabay-1536x1024.webp",
-        "alt": "Lavenar from housegrail.com"
-    
-},
-{
+    "src": "https://housegrail.com/wp-content/uploads/2022/03/Lavender_Pixabay-1536x1024.webp",
+    "alt": "Lavenar from housegrail.com"
+  },
+  {
     "id": 2,
     "title": "Stonecrop",
     "scientific": "Sedum",
-   "description": "Stonecrop is an outstanding Sedum cultivar that is exceptionally drought-resistant. Once you have planted these perennials properly, they will easily last over half the year in your garden. Stonecrop will grow up to two feet and has a variety of shades from pink to purple and even dark red or white. Not only will this plant look great in the garden, but it attracts bees and butterflies. At the same time, other critters such as deer or rabbits generally leave them alone.",
+    "description": "Stonecrop is an outstanding Sedum cultivar that is exceptionally drought-resistant. Once you have planted these perennials properly, they will easily last over half the year in your garden. Stonecrop will grow up to two feet and has a variety of shades from pink to purple and even dark red or white. Not only will this plant look great in the garden, but it attracts bees and butterflies. At the same time, other critters such as deer or rabbits generally leave them alone.",
     "sun": "All sun",
     "water": "water montly",
     "soil": "high PH",
     "src": "https://housegrail.com/wp-content/uploads/2022/03/Stonecrop_Pixabay-1536x1024.webp",
     "alt": "Stonecrop from housegrail.com"
-    
-},
-{
+  },
+  {
     "id": 3,
     "title": "Coneflower",
     "scientific": "Echinacea",
-   "description": "Many people know Echinacea for its medicinal properties. It is commonly taken in pill form as a natural treatment for cold and flu symptoms. But it is also a very drought-resistant and hardy plant once it’s established. And it is pretty stunning to look at as well. One of the most common Echinacea cultivars is the coneflower which has slender, pinkish-purple petals and a reddish-brown center.",
+    "description": "Many people know Echinacea for its medicinal properties. It is commonly taken in pill form as a natural treatment for cold and flu symptoms. But it is also a very drought-resistant and hardy plant once it’s established. And it is pretty stunning to look at as well. One of the most common Echinacea cultivars is the coneflower which has slender, pinkish-purple petals and a reddish-brown center.",
     "sun": "medium",
     "water": "water 1x week",
     "soil": "low PH",
 
-        "src": "https://housegrail.com/wp-content/uploads/2022/03/Coneflower_Pixabay-1536x1024.webp",
-        "alt": "Coneflower from housegrail.com"
-    
-}
+    "src": "https://housegrail.com/wp-content/uploads/2022/03/Coneflower_Pixabay-1536x1024.webp",
+    "alt": "Coneflower from housegrail.com"
+  }
 ]

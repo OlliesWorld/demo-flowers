@@ -11,7 +11,7 @@ const IndexPage = () => (
   <Layout>
     <div className="">
       <h1>
-        <GiPlantsAndAnimals /> Welcome to my plants plan<GiPlantsAndAnimals/>
+        <GiPlantsAndAnimals /> Welcome to my garden plan<GiPlantsAndAnimals/>
       </h1>
       <p className="">This is a place to plan garden</p>
       <Link to="gallery">To Cards</Link>
