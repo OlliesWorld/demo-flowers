@@ -2,7 +2,7 @@ import * as React from "react"
 import { GiPlantsAndAnimals } from "@react-icons/all-files/gi/GiPlantsAndAnimals"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-// import Seo from "../components/seo"
+import Seo from "../components/seo"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { PortableText } from "@portabletext/react"
 import styled from "styled-components"
@@ -137,7 +137,7 @@ export default function FlowerPage({ pageContext: { flower } }) {
   )
 }
 
-// export const Head = () => <Seo title="Page two" />
+export const Head = ({ pageContext: { flower } }) => <Seo title={`Demo | ${flower.flowername}`} />
 
 export const query = graphql`
   query ($slug: String) {

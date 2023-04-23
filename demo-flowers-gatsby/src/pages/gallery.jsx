@@ -56,7 +56,7 @@ function GalleryPage({ data }) {
   )
 }
 
-export const Head = () => <Seo title="Page two" />
+export const Head = () => <Seo title="Gallery of Flowers" />
 
 export default GalleryPage
 

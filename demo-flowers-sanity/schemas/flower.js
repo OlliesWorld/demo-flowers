@@ -1,10 +1,12 @@
 
 import {defineField, defineType} from 'sanity'
+import { BsFlower2 as icon } from 'react-icons/bs';
 
 export default defineType({
     name: 'flower',
     type: 'document',
     title: 'Flower',
+    icon,
     fields: [    
       defineField({
         name: 'mainImage',
@@ -46,7 +48,14 @@ export default defineType({
         title: 'Water',
         type: 'string',
       }),
-      
+      defineField({
+        title: 'Resource Link',
+        name: 'link',
+        type: 'url',
+        validation: Rule => Rule.uri({
+          scheme: ['http', 'https', 'mailto', 'tel']
+        })
+      }),
       defineField({
         name: 'slug',
         title: 'Slug',

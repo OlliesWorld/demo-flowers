@@ -3,7 +3,7 @@
   "private": true,
   "description": "A simple demo on how to use Gatsby & Sanity together",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Roni",
   "dependencies": {
     "@portabletext/react": "^2.0.2",
     "@react-icons/all-files": "^4.1.0",

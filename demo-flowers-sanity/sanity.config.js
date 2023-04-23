@@ -5,9 +5,9 @@ import {schemaTypes} from './schemas'
 import { dashboardTool, 
   projectUsersWidget,
   projectInfoWidget} from "@sanity/dashboard";
-  // import { documentListWidget } from "sanity-plugin-dashboard-widget-document-list";
+  import { documentListWidget } from "sanity-plugin-dashboard-widget-document-list";
   import {media, mediaAssetSource} from 'sanity-plugin-media'
-
+  import { catsWidget } from "sanity-plugin-dashboard-widget-cats";
 
 
   export default defineConfig({
@@ -17,12 +17,17 @@ import { dashboardTool,
   plugins: [
     dashboardTool({ 
     widgets: [ 
-      // documentListWidget({title: 'Last edited page', order: '_updatedAt desc'}),
-      projectInfoWidget(),
-      projectUsersWidget(),
-      
+      documentListWidget({title: 'Last edited page', order: '_updatedAt desc'}),
+      catsWidget({layout: 'medium'}),
+      projectInfoWidget({layout: 'large'}),
+      projectUsersWidget({layout: 'medium'}),
     ]
-    }), deskTool(), visionTool(), media()],
+    }), deskTool({
+      structure: (S) =>
+        S.list()
+          .title('Base')
+          .items([...S.documentTypeListItems().reverse()]),
+    }), visionTool(), media()],
     form: {
       // Don't use this plugin when selecting files only (but allow all other enabled asset sources)
       file: {
