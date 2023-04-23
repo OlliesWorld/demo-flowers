@@ -1,7 +1,8 @@
-# Women Who Code Boulder/Denver Demo Site
+# Roni's Frontend Developer Portfolio Site
 ## General info
-This project is a demo for a talk about headless CMS. Cards with flowers for planning a garden
-	https://demo-flowers.netlify.app/
+This project is my Web Developer Portfolio to feature my skills and experience.
+I wanted an simple and clean site that also was easy to update when needed.
+	
 ## Technologies
 Project is created with:<br/>
 Gatsby </br>
@@ -21,12 +22,10 @@ Netlify
     ```
 
 ### To-do
-- [x] Gatsby
+
 - [x] Sanity
-- [x] Netlify
-- [ ] Sanity/Netlify auto publish
-- [ ] Add more specifics
-- [ ] layout/design
+- [ ] theme toggle
+- [ ] a bit more action
 - [ ] Done!
 
 ### License

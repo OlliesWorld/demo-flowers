@@ -37,11 +37,8 @@ const GlobalStyle = createGlobalStyle`
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+        <p className="text-lg" ></p>
+        <p className="text-lg">&copy; {new Date().getFullYear()}  Built with <span role="img" >💙</span> by<a href="https://roni.rocks/" target="/"> Roni</a></p>
       </div>
     </>
   )

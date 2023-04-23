@@ -73,7 +73,7 @@ const components = {
 }
 
 export default function FlowerPage({ pageContext: { flower } }) {
-  console.log(flower)
+  // console.log(flower)
   return (
     <Layout>
       <FlowerStyles>
@@ -123,14 +123,7 @@ export default function FlowerPage({ pageContext: { flower } }) {
           >
             Related info
           </a>
-          <a
-            href="https://housegrail.com/best-flowers-to-grow-in-colorado/"
-            alt="testing"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            resource info
-          </a>
+          
         </div>
       </FlowerStyles>
     </Layout>
