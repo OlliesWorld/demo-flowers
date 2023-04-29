@@ -8,7 +8,7 @@
     "water": "water every other day",
     "soil": "low PH",
 
-    "src": "https://housegrail.com/wp-content/uploads/2022/03/Lavender_Pixabay-1536x1024.webp",
+    "src": "flower-sun.png",
     "alt": "Lavenar from housegrail.com"
   },
   {
@@ -19,7 +19,7 @@
     "sun": "All sun",
     "water": "water montly",
     "soil": "high PH",
-    "src": "https://housegrail.com/wp-content/uploads/2022/03/Stonecrop_Pixabay-1536x1024.webp",
+    "src": "flower-sun.png",
     "alt": "Stonecrop from housegrail.com"
   },
   {
@@ -31,7 +31,7 @@
     "water": "water 1x week",
     "soil": "low PH",
 
-    "src": "https://housegrail.com/wp-content/uploads/2022/03/Coneflower_Pixabay-1536x1024.webp",
+    "src": "flower-sun.png",
     "alt": "Coneflower from housegrail.com"
   }
 ]

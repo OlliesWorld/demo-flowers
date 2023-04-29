@@ -38,9 +38,6 @@ function GalleryPage({ data }) {
           <h2>These are the plants I want to plant in my garden. 🌻</h2>
         </section>
         <section className="cards">
-          {/* {CardData.map((card) =>
-      <Card key={card.id} soil={card.soil} water={card.water} sun={card.sun} image={card.src} alt={card.alt} title={card.title} description={card.description}/>
-      )} */}
           {flower.map(card => (
             <Card
               key={card.id}

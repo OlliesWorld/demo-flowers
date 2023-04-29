@@ -20,6 +20,7 @@ const Header = ({ siteTitle }) => (
       to="/"    >
       {siteTitle}
     </Link>
+    
   </HeaderStyles>
 )
 
